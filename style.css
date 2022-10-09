@@ -1,8 +1,18 @@
 :root {
   --logo-color: #2196f3;
+  --logohover-color: #88c9ff;
+  --dark-color: #000;
+  --bright-color: #fff;
+  --second-color: #757575;
+  --third-color: #212121;
+  --border-color: #eee;
+  --theme-color: #2f303a;
+  --team-color: #f5f4fa;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  color: var(--dark-color);
 }
 .line {
   width: 100%;
@@ -12,7 +22,12 @@ body {
   color: var(--logo-color);
 }
 .header {
+  background-color: #fff;
   height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  opacity: 90%;
 }
 .header-cointainer {
   text-align: center;
@@ -21,17 +36,16 @@ body {
   display: inline-flex;
 }
 .logo {
-  color: black;
+  color: var(--dark-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   display: inline-flex;
 }
 .logo:visited {
-  color: black;
+  color: var(--dark-color);
 }
 
 .menu {
@@ -41,7 +55,7 @@ body {
   margin-left: 93px;
 }
 .menu p {
-  color: black;
+  color: var(--dark-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -64,7 +78,7 @@ body {
   margin-left: 371px;
 }
 .adres p {
-  color: #757575;
+  color: var(--second-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -94,22 +108,22 @@ body {
 .nav-button {
   width: 121px;
   height: 38px;
-  color: #212121;
+  color: var(--third-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  border: black solid 0;
+  border: none;
   border-radius: 4px;
 }
 .nav-button:hover {
-  color: #fff;
+  color: var(--bright-color);
   background-color: var(--logo-color);
   cursor: pointer;
 }
 .nav-button:focus {
-  color: #fff;
+  color: var(--bright-color);
   background-color: var(--logo-color);
 }
 .windows-port {
@@ -124,13 +138,12 @@ body {
 .window {
   width: 378px;
   height: 404px;
-  border: #eee solid 1px;
+  border: var(--border-color) solid 1px;
   padding-bottom: 0;
 }
 .window h2 {
   color: #212121;
   font-family: "Roboto";
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -138,28 +151,26 @@ body {
   margin-bottom: 0;
 }
 .window p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin: 0;
-  color: #757575;
+  color: var(--second-color);
   padding-left: 24px;
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--theme-color);
 }
 .footer a {
   text-decoration: none;
 }
 .logo-footer a {
-  color: white;
+  color: var(--bright-color);
 }
 .logo-footer {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -167,11 +178,10 @@ body {
 }
 .footer-adres {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--bright-color);
   margin: 0;
 }
 .footer-list {
@@ -181,7 +191,6 @@ body {
 }
 .footer-list a {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -191,15 +200,15 @@ body {
   text-decoration: underline;
 }
 .hero {
-  color: #fff;
-  background-color: #2f303a;
+  color: var(--bright-color);
+  background-color: var(--theme-color);
   height: 600px;
   text-align: center;
 }
 .hero button {
   background-color: var(--logo-color);
-  color: #fff;
-  border: black solid 0;
+  color: var(--bright-color);
+  border: none;
   width: 200px;
   height: 50px;
   font-style: normal;
@@ -211,10 +220,12 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
 }
-.hero button:hover {
-  background-color: #63b2f3;
-  transition: 0.3s;
+.main_button:focus,
+.main_button:hover {
+  background-image: linear-gradient(var(--logo-color), var(--logohover-color));
+  cursor: pointer;
 }
+
 .hero h1 {
   font-style: normal;
   font-weight: 900;
@@ -226,9 +237,7 @@ body {
   margin-top: 0;
   padding-top: 200px;
 }
-.hero button:hover {
-  cursor: pointer;
-}
+
 .do {
   text-align: center;
 }
@@ -240,20 +249,18 @@ body {
   text-align: left;
 }
 .do-text h3 {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--third-color);
 }
 .do-text p {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color);
 }
 
 .do-text li {
@@ -266,12 +273,11 @@ body {
 }
 
 .do-header {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--third-color);
 }
 .do-img {
   list-style: none;
@@ -281,16 +287,15 @@ body {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-color);
   text-align: center;
 }
 .team h2 {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--third-color);
   padding-top: 94px;
 }
 .workers {
@@ -300,7 +305,7 @@ body {
   margin-bottom: 94px;
 }
 .workers li {
-  background-color: #fff;
+  background-color: var(--bright-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -312,18 +317,24 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--third-color);
 }
 .workers li p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color);
 }
 .footer-cointainer {
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
+}
+
+.w3c {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 15%;
 }
