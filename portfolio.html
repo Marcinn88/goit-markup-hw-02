@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
     <title>Zadanie domowe nr 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
       <p class="logo">
         <a href="./index.html" class="logo">
           <span class="blue">Web</span>Studio</a
         >
       </p>
       <nav class="navigation">
-        <ul>
+        <ul class="menu">
           <li>
             <a href="#"><p>Agencja</p></a>
           </li>
           <li>
-            <a href="#"><p>Portfolio</p></a>
+            <a href="./portfolio.html"><p>Portfolio</p></a>
           </li>
           <li>
             <a href="#"><p>Kontakt</p></a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="adres">
         <li>
           <a href="mailto:info@devstudio.com"><p>info@devstudio.com</p></a>
         </li>
@@ -37,86 +43,130 @@
       </ul>
     </header>
     <main>
-      <nav>
+      <nav class="nav-bar">
         <ul>
-          <li>Wszystkie</li>
-          <li>Strony</li>
-          <li>Aplikacje</li>
-          <li>Dizajn</li>
-          <li>Marketing</li>
+          <li><button type="button" class="nav-button">Wszystkie</button></li>
+          <li><button type="button" class="nav-button">Strony</button></li>
+          <li><button type="button" class="nav-button">Aplikacje</button></li>
+          <li><button type="button" class="nav-button">Dizajn</button></li>
+          <li><button type="button" class="nav-button">Marketing</button></li>
         </ul>
       </nav>
       <article>
         <h1 style="opacity: 0">Menu</h1>
         <div class="window">
           <img
-            src="./images/port1.png"
+            src="./images/port1.jpg"
             alt="Widok komputera. Podgląd strony głównej."
+            width="378px"
+            height="294px"
           />
           <h2>Technocrack</h2>
           <p>Strona internetowa</p>
         </div>
 
         <div class="window">
-          <img src="./images/port2.png" alt="Dwóch koszykarzy." />
+          <img
+            src="./images/port2.jpg"
+            alt="Dwóch koszykarzy."
+            width="378px"
+            height="294px"
+          />
           <h2>Grafika New Orlean vs Golden Star</h2>
           <p>Dizajn</p>
         </div>
 
         <div class="window">
-          <img src="./images/port3.png" alt="Logo restauracji SeaFood." />
+          <img
+            src="./images/port3.jpg"
+            alt="Logo restauracji SeaFood."
+            width="378px"
+            height="294px"
+          />
           <h2>Restauracja Seafood</h2>
           <p>Aplikacja</p>
         </div>
 
         <div class="window">
-          <img src="./images/port4.png" alt="Czarne słuchawki na szarym tle." />
+          <img
+            src="./images/port4.jpg"
+            alt="Czarne słuchawki na szarym tle."
+            width="378px"
+            height="294px"
+          />
           <h2>Projekt Prime</h2>
           <p>Marketing</p>
         </div>
 
         <div class="window">
           <img
-            src="./images/port5.png"
+            src="./images/port5.jpg"
             alt="Dwa pudełka. Małe pomarańczowe i większe białe."
+            width="378px"
+            height="294px"
           />
           <h2>Projekt Boxes</h2>
           <p>Aplikacja</p>
         </div>
 
         <div class="window">
-          <img src="./images/port6.png" alt="Czarna strona na monitorze." />
+          <img
+            src="./images/port6.jpg"
+            alt="Czarna strona na monitorze."
+            width="378px"
+            height="294px"
+          />
           <h2>Inspiration has no Borders</h2>
           <p>Strona internetowa</p>
         </div>
 
         <div class="window">
-          <img src="./images/port7.png" alt="Otwata gazeta." />
+          <img
+            src="./images/port7.jpg"
+            alt="Otwata gazeta."
+            width="378px"
+            height="294px"
+          />
           <h2>Magazyn Limited Edition</h2>
           <p>Dizajn</p>
         </div>
 
         <div class="window">
-          <img src="./images/port8.png" alt="Metka z napisem label tag." />
+          <img
+            src="./images/port8.jpg"
+            alt="Metka z napisem label tag."
+            width="378px"
+            height="294px"
+          />
           <h2>Projekt LAB</h2>
           <p>Marketing</p>
         </div>
 
         <div class="window">
-          <img src="./images/port9.png" alt="." />
+          <img
+            src="./images/port9.jpg"
+            alt="Osoba pisząca na klawiaturze."
+            width="378px"
+            height="294px"
+          />
           <h2>Growing Business</h2>
           <p>Aplikacja</p>
         </div>
       </article>
     </main>
-    <footer>
-      <p class="logo">
-        <a href="#"><span class="blue">Web</span>Studio</a>
+
+    <footer class="footer">
+      <p class="logo-footer">
+        <a href="./index.html"><span class="blue">Web</span>Studio</a>
       </p>
       <address>
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-        <ul>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
+        <p class="footer-adres">m. Warszawa, Aleje Jerozolimskie 21</p>
+        <ul class="footer-list">
+          <li>
+            <a href="mailto:info@example.com" class="underline"
+              >info@example.com</a
+            >
+          </li>
           <li><a href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
       </address>
