@@ -50,6 +50,9 @@ body {
 .menu p:hover {
   color: var(--logo-color);
 }
+.menu p:focus {
+  color: var(--logo-color);
+}
 .menu a {
   text-decoration: none;
 }
@@ -68,6 +71,9 @@ body {
   letter-spacing: 0.02em;
 }
 .adres p:hover {
+  color: var(--logo-color);
+}
+.adres p:focus {
   color: var(--logo-color);
 }
 .adres a {
@@ -101,6 +107,10 @@ body {
   color: #fff;
   background-color: var(--logo-color);
   cursor: pointer;
+}
+.nav-button:focus {
+  color: #fff;
+  background-color: var(--logo-color);
 }
 .windows-port {
   display: inline-block;
@@ -200,6 +210,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
+}
+.hero button:hover {
+  background-color: #63b2f3;
+  transition: 0.3s;
 }
 .hero h1 {
   font-style: normal;
